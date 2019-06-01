@@ -1,0 +1,26 @@
+default: &default
+  timeout: 5000
+  pool: 5
+  encoding: unicode
+  adapter: postgresql
+
+development:
+  <<: *default
+  adapter: postgresql
+  database: git_hook_dev
+  username: ice
+  password: "ice123"
+
+test:
+  <<: *default
+  adapter: postgresql
+  database: git_hook_test
+  username: ice
+  password: "ice123"
+
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: job_test_prod
+  pool: 5
