@@ -1,12 +1,16 @@
 class Issue < ApplicationRecord
   has_many :events
 
-  #validate uniq of issue_number
+  accepts_nested_attributes_for :events
 
   def new_event params
     event = Event.new(params)
     self.update_issue_by_event(event)
-    self.assign_attributes(events: [event])
+
+    ActiveRecord::Base.transaction do
+      self.save
+      event.save
+    end
   end
 
   def update_issue_by_event event

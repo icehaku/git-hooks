@@ -11,6 +11,12 @@ gem 'uglifier', '>= 1.3.0'
 group :development, :test do
   gem 'pry'
   gem 'bootsnap', '>= 1.1.0', require: false
+  gem 'dotenv-rails'
+
+  gem 'rspec-rails'
+  gem 'factory_bot_rails'
+  gem 'faker'
+  gem 'shoulda-matchers'
 end
 
 group :development do
