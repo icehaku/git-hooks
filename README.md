@@ -18,6 +18,7 @@ A study project trying to work with github webhooks.
 
 ## Run the Project
 
+* console:
 ```console
 https://github.com/icehaku/git-hooks.git
 bundle install
@@ -25,6 +26,13 @@ rake db:migrate
 rake db:create RAILS_ENV=test #test suite
 rspec #test suite
 ```
+* Create the github webbook;
+
+* Set the webhook secret;
+
+* Set the enviroment parameters, based on the .env or change if you want;
+
+
 # Hosted Project on Heroku
 
 You can try the hosted project doing stuff(open, edit, etcs) with issues on this repo.
