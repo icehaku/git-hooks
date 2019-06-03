@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 ruby '2.6.1'
 
-gem 'rails', '~> 5.2.2', '>= 5.2.2.1'
+gem 'rails', '~> 5.2.3'
 gem 'pg', '~>  1.1.4'
 gem 'jsonapi-resources', '~>  0.9.6'
 gem 'turbolinks', '~> 5'
