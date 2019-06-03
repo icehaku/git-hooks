@@ -13,7 +13,7 @@ A study project trying to work with github webhooks.
 
 ## TestCI
 
-[![Build Status](https://travis-ci.org/icehaku/minibox.svg?branch=master)](https://travis-ci.org/icehaku/minibox)
+[![Build Status](https://travis-ci.org/icehaku/git-hooks.svg?branch=master)](https://travis-ci.org/icehaku/git-hooks)
 
 
 ## Run the Project
@@ -27,6 +27,12 @@ rspec #test suite
 ```
 # Hosted Project on Heroku
 
+You can try the hosted project doing stuff(open, edit, etcs) with issues on this repo.
+
 https://git-hooks-ice.herokuapp.com/
 
-* You can try the hosted project doing stuff(open, edit, etcs) with issues on this repo.
+* https://git-hooks-ice.herokuapp.com/events
+* https://git-hooks-ice.herokuapp.com/issues
+* https://git-hooks-ice.herokuapp.com/issues/6/events
+
+
