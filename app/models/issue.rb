@@ -1,6 +1,8 @@
 class Issue < ApplicationRecord
   has_many :events
 
+  validates :last_action, :last_user_action, presence: true
+
   accepts_nested_attributes_for :events
 
   def new_event params

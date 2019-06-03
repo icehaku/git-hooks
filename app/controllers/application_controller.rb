@@ -8,12 +8,14 @@ class ApplicationController < ActionController::Base
       end
 
       format.json do
-        render json: { "error": "NotAuthorized" }
+        render json: { "error": "NotAuthorized", status: 401 }, status: 401
       end
-    end if auth_buss(params)
+    end if auth_bussiness(params)
   end
 
-  def auth_buss params
-    params[:token].blank? or params[:token] != "ice"
+  private
+
+  def auth_bussiness params
+    params[:token].blank? or params[:token] != ENV['TOKEN']
   end
 end
